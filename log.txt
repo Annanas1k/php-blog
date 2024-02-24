@@ -1,0 +1,27 @@
+-- Tabelul pentru utilizatori
+CREATE TABLE utilizatori (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  nume_utilizator VARCHAR(50) NOT NULL,
+  parola VARCHAR(255) NOT NULL,
+  nume VARCHAR(50) NOT NULL,
+  email VARCHAR(100) NOT NULL,
+  data_inregistrare TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Tabelul pentru postari
+CREATE TABLE postari (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  imagine LONGBLOB NOT NULL,
+  continut TEXT NOT NULL,
+  data_publicare TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  utilizator_id INT NOT NULL,
+  FOREIGN KEY (utilizator_id) REFERENCES utilizatori(id)
+);
+
+
+
+INSERT INTO utilizatori (nume_utilizator, parola, nume, email)
+VALUES
+  ('john_doe', '123456', 'John Doe', 'john.doe@example.com'),
+  ('jane_smith', 'password123', 'Jane Smith', 'jane.smith@example.com'),
+  ('alex_wilson', 'securepass', 'Alex Wilson', 'alex.wilson@example.com');

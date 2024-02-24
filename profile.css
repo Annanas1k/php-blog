@@ -1,0 +1,116 @@
+body {
+    background-color: #B2BABB;
+    margin: 0%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    gap: 30px;
+}
+
+
+.profile_info {
+    position: fixed;
+    display: flex;
+    z-index: 999;
+    width: 50%;
+    height: 120px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    color: lightseagreen;
+    -webkit-text-stroke: 2px blue;
+    border-bottom: 2px solid black;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+    background-color: #fff;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.btn {
+    width: auto;
+    height: auto;
+    display: inline;
+}
+.btn > button {
+    width: 50px;
+    height: 50px;
+}
+
+#logoutbtn {
+    background-image: url("img/logout\ \(1\).png");
+    background-size: cover;
+    border: 3px solid wheat;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
+
+}
+
+#profilebtn {
+    background-image: url("img/user.png");
+    background-size: cover;
+    border: 3px solid wheat;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
+
+}
+
+
+.postari {
+    margin-top: 100px;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.postare { 
+    margin-top: 20px;
+    border: 5px solid lightgray;
+    padding: 5px;
+}
+
+.postare img {
+    width: 100%;
+    height: 500px;
+}
+
+
+.postare > p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+
+.postare > p1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: #B2BABB  ;
+}
+
+.postare > p2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.heart-button {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+  
+.heart-button.clicked {
+    background-color: red;
+}
+  
